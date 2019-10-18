@@ -27,7 +27,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     ChartsModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyCHD2bItz99ddlDnyh8JfalmUCd6zvH8xw'
+      apiKey: ''
     })
   ],
   providers: [],

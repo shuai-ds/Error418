@@ -1,14 +1,15 @@
-<div style="display: block;">
-  <canvas baseChart width="200" height="200"
-          [datasets]="lineChartData"
-          [labels]="lineChartLabels"
-          [colors]="lineChartColors"
-          [legend]="lineChartLegend"
-          [chartType]="lineChartType"
-          [plugins]="lineChartPlugins">
-  </canvas>
+<div class="flex">
+  <div class="flex-item">
+    <div style="display: block;max-height: 800px">
+      <canvas baseChart width="400" height="200"
+              [datasets]="lineChartData"
+              [labels]="lineChartLabels"
+              [options]="lineChartOptions"
+              [colors]="lineChartColors"
+              [legend]="lineChartLegend"
+              [chartType]="lineChartType"
+              [plugins]="lineChartPlugins"></canvas>
+    </div>
+  </div>
 </div>
-<agm-map [latitude]='latitude' [longitude]='longitude'
-         [mapTypeId]='mapType'>
-</agm-map>
 
